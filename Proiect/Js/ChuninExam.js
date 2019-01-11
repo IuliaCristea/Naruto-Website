@@ -8,8 +8,20 @@ class Player
     this.result3 = "";
   }
 }
+let currentUser = new Player();
+var Questions = null;
+
 window.onload = function()
-{
+{/*
+  alert("stai");
+  fetchJSONFile("C:\\Users\\iulia.cristea\\Desktop\\fmi\\Naruto-Website-master\\Proiect\\Json\\Questions.json\\Questions.json", 
+                function(data)
+                {
+                  Questions = data;
+                }
+              );
+              
+  //Questions = JSON.parse("Questions");*/
   var title = document.createTextNode("Welcome to the Chunin Exam!");
   var element = document.createElement("h1");
   element.appendChild(title);
@@ -41,18 +53,21 @@ window.onload = function()
   setTimeout(function(){list.appendChild(l3);},17000);
 
   text = document.createTextNode("What is your name?");
-  var p = document.createElement(p);
+  var p = document.createElement("p");
   p.appendChild(text);
   setTimeout(function(){document.body.appendChild(p);},20000);
 
   var name = document.createElement("textarea");
   name.setAttribute("maxlength",200);
+  name.setAttribute("id","name");
   setTimeout(function(){document.body.appendChild(name);},20000);
+  name.style.alignContent = "center";
   var br = document.createElement("br");
   setTimeout(function(){document.body.appendChild(br);},20000);
 
   button2 = document.createElement("button");
   button2.appendChild(document.createTextNode("Yatta!"));
+  button2.addEventListener("click",SaveUserName);
   setTimeout(function(){document.body.appendChild(button2);},20000);
 
   var button = document.createElement("button");
@@ -63,7 +78,10 @@ window.onload = function()
   
 }
 
-var Questions = null;
+function SaveUserName()
+{
+  currentUser.Name = document.getElementById("name").value;
+}
 /*
 function fetchJSONFile(path, callback) 
 {
@@ -84,12 +102,6 @@ function fetchJSONFile(path, callback)
   };
   httpRequest.open('GET', path);
   httpRequest.send(); 
-}
-window.onload = function()
-{
-   fetchJSONFile("E:\\Facultate\\TW\\Proiect\\Questions.json", function(data){
-   Questions = data;
- });
 }*/
 
 function StartGame(source)
@@ -271,7 +283,7 @@ function SubmitAnswers()
     round2Button.addEventListener("click",Round2);
     cancelButton.addEventListener("click",Exit);
   }
-  
+  currentUser.result1 = nrRightAnswers;
 }
 
 function Exit()
@@ -285,6 +297,14 @@ function Exit()
 
 function Round2()
 {
+  var display = document.getElementById("display");
+  display.innerHTML = "";
+  var title = document.createElement("h1");
+  var text = document.createTextNode("Invaders!!");
+  title.style
+  title.appendChild(text);
+  display.appendChild(title);
+
 
 }
 
