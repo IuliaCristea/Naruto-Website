@@ -1,0 +1,174 @@
+html,body{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-image: url('narutoSasuke.jpeg');
+	background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	margin:0;
+}
+.navbar {
+
+  width: 100%;
+  background-color: #555;
+  overflow: hidden;
+  top:0;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #000;
+}
+
+.active {
+  background-color: #cccccc;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding:12px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.welcomeMessage{
+	font-family: "Lucida Console";
+	font-size: 120%;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px grey;
+	animation-name: welcomeMessage;
+	animation-duration: 2s;
+	position:relative;
+	background:rgba(50,50,50,0.5);
+	width:100%;
+}
+
+@keyframes welcomeMessage{
+	0%   {left:-640px; top:-480px;}
+	50%  {left: 100px; top:100px;}
+	100% {left: 0px; top:0px;}
+}
+
+.yokoso{
+	font-family: "Lucida Console";
+	font-size: 160%;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px grey;
+	animation-name: yokoso;
+	animation-duration: 2s;
+	position:relative;
+}
+h1.yokoso{
+	background:rgba(50,50,50,0.5);
+	width:100%;
+}
+@keyframes yokoso{
+	0%   {left:-640px; top:-480px;}
+	50%  {left: 100px; top:100px;}
+	100% {left: 10px; top:10px;}
+}
+
+@keyframes trailer{
+	0%   {left:-640px; top:-480px;}
+	50%  {left: 200px; top:200px;}
+	100% {left: 0px; top:0px;}
+}
+
+#trailer{
+   height: 60%;
+   position: relative;
+   width: 60%;
+}
+iframe{
+	border-top-width:0px;
+	border-left-width:0px;
+	border-bottom-width:0px;
+	border-right-width:0px;
+}
+footer{
+	position:fixed;
+	bottom: 0;
+	display:flex;
+	width: 100%;
+}
+.footer{
+	box-sizing:border-box;
+	padding-right: 2%;
+}
+aside{
+	color: white;
+	font-family: "Lucida Console";
+	text-shadow: 2px 1px grey;
+	font-size: 100%;
+}
+.links{
+	text-decoration:none;
+	color:#cce6ff;
+}
+
+@media screen and (max-width:600px){
+	.navbar a{
+		width:100%;
+	}
+	
+	aside{
+		font-size:50%;
+	}
+	
+	#trailer{
+		width:100%;
+		border-top-width:0px;
+		border-left-width:0px;
+		border-bottom-width:0px;
+		border-right-width:0px;
+	}
+	
+}

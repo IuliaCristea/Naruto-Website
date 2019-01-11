@@ -1,0 +1,76 @@
+{
+    "Questions":[
+        {
+            "question": "Who are Naruto's parents?",
+            "answers":[
+            "Jiraiya & Tsunade",
+            "Kushina & Minato",
+            "Mikoto & Fugaku"
+            ],
+            "correctAnswer": "Kushina & Minato"
+        },
+        {
+            "question": "Who beat Naruto in talk-no-jutsu?",
+            "answers":[
+            "Sasuke",
+            "Itachi",
+            "Kakashi"
+            ],
+            "correctAnswer": "Itachi"
+        },
+        {
+            "question": "Who is Naruto in love with? But Sakura?",
+            "answers":[
+            "Sasuke",
+            "Sakura & Sasuke",
+            "Hinata & Lee"
+            ],
+            "correctAnswer": "Sasuke"
+        },
+        {
+            "question": "Who is Kakashi's best friend?",
+            "answers":[
+            "Sakura Haruno",
+            "Iruka",
+            "Obito Uchiha"
+            ],
+            "correctAnswer": "Obito Uchiha"
+        },
+        {
+            "question": "What is the best jutsu the Uchiha clan had?",
+            "answers":[
+            "Izanami",
+            "Izanagi",
+            "Katon: Goukakyuu no jutsu"
+            ],
+            "correctAnswer": "Izanami"
+        },
+        {
+            "question": "How many jutsus uses Naruto?",
+            "answers":[
+            "2",
+            "8",
+            "34"
+            ],
+            "correctAnswer": "2"
+        },
+        {
+            "question": "Who is Madara Uchiha's rival?",
+            "answers":[
+            "Hashirama",
+            "Tobirama",
+            "Karin"
+            ],
+            "correctAnswer": "Hashirama"
+        },
+        {
+            "question": "Who is Hinata?",
+            "answers":[
+            "Naruto's sister",
+            "Naruto's wife",
+            "Sasuke's wife"
+            ],
+            "correctAnswer": "Naruto's wife"
+        }
+      ]
+}

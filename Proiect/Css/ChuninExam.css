@@ -1,0 +1,16 @@
+body{
+    background-image: url('..\\Images\\ChuninExam.jpg');
+
+}
+h1{
+    color:whitesmoke;
+    text-shadow: black 1px 1px;
+    font-size: 70px;
+    text-align: center;
+}
+ol{
+    color:whitesmoke;
+    text-shadow: black 1px 1px;
+    font-size: 20px;
+    background: rgb(0, 0, 0, 0.5)
+}

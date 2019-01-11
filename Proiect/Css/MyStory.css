@@ -1,0 +1,375 @@
+body{
+	background-image: url('NarutoFamily.jpg');
+	margin:0;
+}
+html,body{
+	height:100%;
+}
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: hidden;
+  top:0;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #000;
+}
+
+.active {
+  background-color: #cccccc;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding:12px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#iframeAudio{
+	visibility:hidden;
+}
+
+.container {
+	padding-top:10%;
+	display:flex;
+	flex-direction:row;
+	height:auto;
+}
+.column{
+	box-sizing:border-box;
+	position:relative;
+	width:50%;
+}
+p{
+	position:absolute;
+	width:90%;
+	height:auto;
+	margin-left:6%;
+	margin-top:13%;
+	padding:2%;
+	font-size:100%;
+	text-indent :3em;
+	text-align:center;
+	font-family:"Lucia Console";
+	color:white;
+	text-shadow: 1px 1px black;
+	background:rgba(50,50,50,0.5);
+	
+}
+img {
+	position:absolute;
+	width:90%;
+	height:auto;
+}
+footer{
+	position:fixed;
+	bottom: 0;
+	display:flex;
+	width: 100%;
+	background:rgba(50,50,50,0.5);
+}
+.footer{
+	box-sizing:border-box;
+	padding-right: 2%;
+}
+aside{
+	color: white;
+	font-family: "Lucida Console";
+	text-shadow: 2px 1px grey;
+	font-size: 100%;
+	width:100%;
+	
+}
+@keyframes img1{
+	0%		{opacity:1;}
+	6.56%	{opacity:1;}
+	8.56%	{opacity:0;}
+	100%	{opacity:0;}
+}
+@keyframes img2{
+	0%		{opacity:0;}
+	6.56%	{opacity:0;}
+	8.56%	{opacity:1;}
+	14.12%	{opacity:1;}
+	16.12%	{opacity:0;}
+	100%	{opacity:0;}
+}
+@keyframes img3{
+	0%		{opacity:0;}
+	14.12%	{opacity:0;}
+	16.12%	{opacity:1;}
+	22.68%	{opacity:1;}
+	24.68%	{opacity:0;}
+	100%	{opacity:0;}
+}
+@keyframes img4{
+	0%		{opacity:0;}
+	22.68%	{opacity:0;}
+	24.68%	{opacity:1;}
+	31.24%	{opacity:1;}
+	33.24%	{opacity:0;}
+	100%	{opacity:0;}
+}
+@keyframes img5{
+	0%		{opacity:0;}
+	31.24%	{opacity:0;}
+	33.24%	{opacity:1;}
+	39.8%	{opacity:1;}
+	41.8%	{opacity:0;}
+	100%	{opacity:0;}
+}
+@keyframes img6{
+	0%		{opacity:0;}
+	39.8%	{opacity:0;}
+	41.8%	{opacity:1;}
+	48.36%	{opacity:1;}
+	50.36%	{opacity:0;}
+	100%	{opacity:0;}
+}
+@keyframes img7{
+	0%		{opacity:0;}
+	48.36%	{opacity:0;}
+	50.36%	{opacity:1;}
+	56.92%	{opacity:1;}
+	58.92%	{opacity:0;}
+	100%	{opacity:0;}
+}
+@keyframes img8{
+	0%		{opacity:0;}
+	56.92%	{opacity:0;}
+	58.92%	{opacity:1;}
+	65.48%	{opacity:1;}
+	67.48%	{opacity:0;}
+	100%	{opacity:0;}
+}
+@keyframes img9{
+	0%		{opacity:0;}
+	65.48%	{opacity:0;}
+	67.48%	{opacity:1;}
+	74.04%	{opacity:1;}
+	76.04%	{opacity:0;}
+	100%	{opacity:0;}
+}
+@keyframes img10{
+	0%		{opacity:0;}
+	74.04%	{opacity:0;}
+	76.04%	{opacity:1;}
+	82.6%	{opacity:1;}
+	84.6%	{opacity:0;}
+	100%	{opacity:0;}
+}
+@keyframes img11{
+	0%		{opacity:0;}
+	82.6%	{opacity:0;}
+	84.6%	{opacity:1;}
+	91.16%	{opacity:1;}
+	93.16%	{opacity:0;}
+	100%	{opacity:0;}
+}
+@keyframes img12{
+	0%		{opacity:0;}
+	91.16%	{opacity:0;}
+	93.16%	{opacity:1;}
+	98%		{opacity:1;}
+	100%	{opacity:0;}
+}
+.container img:nth-child(12){
+	animation-name: img12; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container img:nth-child(11) {
+	animation-name: img11; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container img:nth-child(10){
+	animation-name: img10; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container img:nth-child(9){
+	animation-name: img9; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container img:nth-child(8){
+	animation-name: img8; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container img:nth-child(7){
+	animation-name: img7; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container img:nth-child(6){
+	animation-name: img6; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container img:nth-child(5) {
+	animation-name: img5; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container img:nth-child(4){
+	animation-name: img4; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container img:nth-child(3) {
+	animation-name: img3; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container img:nth-child(2){
+	animation-name: img2; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container img:nth-child(1){
+	animation-name: img1; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+
+.container p:nth-child(12){
+	animation-name: img12; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container p:nth-child(11){
+	animation-name: img11; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+ .container p:nth-child(10){
+	animation-name: img10; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+ .container p:nth-child(9){
+	animation-name: img9; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container p:nth-child(8){
+	animation-name: img8; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+ .container p:nth-child(7){
+	animation-name: img7; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+ .container p:nth-child(6){
+	animation-name: img6; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container p:nth-child(5){
+	animation-name: img5; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container p:nth-child(4){
+	animation-name: img4; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+ .container p:nth-child(3){
+	animation-name: img3; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+ .container p:nth-child(2){
+	animation-name: img2; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+.container p:nth-child(1){
+	animation-name: img1; 
+	animation-duration:175s;
+	animation-iteration-count:infinite;
+}
+@media only screen and (min-width:630px)  and (max-width:900px){
+	.container{
+		display:flex;
+		flex-direction: column;
+	}
+	.column{
+		width:100%;
+	}
+	p{
+		margin-left:0;
+		margin-top:30%;
+		width:86%;
+	}
+	
+}
+@media only screen and (min-width:320px)  and (max-width:630px){
+	.container{
+		display:flex;
+		flex-direction: column;
+	}
+	.column{
+		width:100%;
+	}
+	p{
+		margin-left:0;
+		margin-top:55%;
+		width:86%;
+	}
+	.navbar a{
+		width:100%;
+	}
+	aside{
+		font-size:50%;
+	}
+}
+
